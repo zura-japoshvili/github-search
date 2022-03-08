@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-export const ShowAccount = () => {
+export const ShowAccount = ({data}) => {
   return (
-    <div>ShowAccount</div>
+    <div>
+    </div>
   )
 }

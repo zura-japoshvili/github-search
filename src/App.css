@@ -22,3 +22,22 @@ body{
   font-size: 25px;
   border-radius: 8px;
 }
+.error-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.error-cont h1{
+  color: #a13636;
+}
+.acc-cont{
+  background-color: #a13636;
+}
+.about-cont{
+  width: 85%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

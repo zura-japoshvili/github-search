@@ -7,24 +7,15 @@ import { IncorrectInput } from './components/IncorrectInput';
 
 
 function App() {
-  const [user, setUser] = useState('');
   const [data, setData] = useState([]);
   const [errors, setErrors] = useState('');
 
-  useEffect(() => {
-    axios.get(user)
-    .then(res => {
-      setData(res.data);
-    })
-    .catch(err => {
-      setErrors(user);
-    })
-  })
+
 
 
   return (
     <>
-      <Search setApi={setUser}/>
+      <Search setData={setData}/>
       <ShowAccount data={data}/>
       <IncorrectInput error={errors}/>
     </>

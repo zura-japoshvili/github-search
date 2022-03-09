@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-
-export const Search = ({setApi}) => {
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+export const Search = ({setData}) => {
   const [user, setUser] = useState('');
 
 
@@ -8,7 +8,14 @@ export const Search = ({setApi}) => {
     e.preventDefault();
     const api = `https://api.github.com/users/${user}`;
 
-    setApi(api);
+
+    axios.get(api)
+    .then(res => {
+      setData(res.data);
+    })
+    .catch(err => {
+      // setErrors(user);
+    })
   }
 
 

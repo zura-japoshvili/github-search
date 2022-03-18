@@ -5,7 +5,7 @@
 }
 body{
   min-height: 100vh;
-  background-color: navajowhite;
+  background-color: rgb(102, 90, 72);
 }
 .search-cont{
   height: 80px;
@@ -32,12 +32,36 @@ body{
   color: #a13636;
 }
 .acc-cont{
-  background-color: #a13636;
+  background-color: #f1c32c8e;
 }
 .about-cont{
+  padding: 15px;
   width: 85%;
   height: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+}
+.about-cont img{
+  border-radius: 50%;
+  width: 40%;
+  height: 40%;
+}
+.about-cont div{
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.about-cont div h5 {
+  font-size: 22px;
+}
+.about-cont div p {
+  font-size: 18px;
+}
+.about-cont div p span{
+  font-weight: 500;
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
 }
